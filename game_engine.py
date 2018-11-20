@@ -32,7 +32,7 @@ class Game:
         self.scr = curses.initscr()
         curses.noecho()
         curses.cbreak()
-        curser.curs_set(0)
+        curses.curs_set(0)
 
         # get dimensions
         w, h = self.scr.getmaxyx()
@@ -47,7 +47,7 @@ class Game:
     def dimensions(self):
         return self.width, self.height
 
-    def next_frame(self):
+    def next_frame(self, delay):
         _log_print("# Rendered the next frame")
 
         # clear screen

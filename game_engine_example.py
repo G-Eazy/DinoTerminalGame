@@ -22,7 +22,7 @@ while True:
     for box in g.boxes:
         box.set_x(box.x-5)
 
-    if time % 1000 == 0:
+    if time_elapsed % 1000 == 0:
         g.boxes.append(g.create_box(25, 25))
 
     ### User Action ###
