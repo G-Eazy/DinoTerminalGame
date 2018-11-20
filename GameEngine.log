@@ -1,24 +1,27 @@
 ## Started log ##
 # Gone from terminal mode to GUI mode 
-#  - width: 19 
-#  - height: 150 
-# Created box: 
-#  - width = 30 
-#  - height = 25 
-#  - x = 175 
-#  - y = 15 
-# Set box variable: 
-#  - x = 175 
-# Set box variable: 
-#  - y = 15 
+#  - width: 75 
+#  - height: 38 
 # Created box: 
 #  - width = 10 
 #  - height = 5 
-#  - x = 5 
-#  - y = 5 
+#  - x = 0 
+#  - y = 20 
 # Set box variable: 
-#  - x = 5 
+#  - x = 0 
 # Set box variable: 
-#  - y = 5 
+#  - y = 20 
+# Created box: 
+#  - width = 10 
+#  - height = 5 
+#  - x = 70 
+#  - y = 20 
+# Set box variable: 
+#  - x = 70 
+# Set box variable: 
+#  - y = 20 
 # Rendered the next frame 
-#  - number of boxes: 2 
+# Exit GUI-mode gracefully 
+# Set box variable: 
+#  - x = 135 
+# Exit GUI-mode gracefully 

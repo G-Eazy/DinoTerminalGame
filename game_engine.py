@@ -70,7 +70,7 @@ class Game:
 
     def create_box(self, width, height, x=0, y=0):
         b = _Box(width*2, height, x, y)
-        self.boxes.append(b)
+        self._boxes.append(b)
         return b
 
 
