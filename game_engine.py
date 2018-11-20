@@ -59,3 +59,7 @@ class _Box:
     def destroy(self):
         print("# Destroyed box")
 
+    def collision(self, b):
+        print("# Checking for collision between self and other box")
+        return False
+

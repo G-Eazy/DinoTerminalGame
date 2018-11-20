@@ -18,3 +18,12 @@ print(b.destroy())
 print(g.quit())
 
 
+
+# example of using next_frame
+while True:
+    k = g.next_frame(200) # enter delay in ms
+
+    if k is None:
+        print("no key pressed, time finished")
+    elif k == Game.SPACE_KEY:
+        print("space key pressed")
