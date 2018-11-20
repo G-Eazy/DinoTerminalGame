@@ -49,7 +49,7 @@ class Game:
     def dimensions(self):
         return self.width, self.height
 
-    def next_frame(self, delay):
+    def next_frame(self, delay, score=None):
         _log_print("# Rendered the next frame")
 
         # clear screen
@@ -107,12 +107,21 @@ class Game:
             for i in range(draw_h):
                 self.scr.addstr(draw_y+i, draw_x, _BLOCK*draw_w)
 
+        # show score
+        if score is not None:
+            self.scr.addstr(10, 10, "Score: {}".format(score))
+
         # show changes
         self.scr.refresh()
         time.sleep(delay/1000)
 
 
-    def quit(self):
+    def quit(self, score=None):
+        if score is not None:
+            self.scr.clear()
+            self.scr.addstr(10, 10, "Score: {}".format(score))
+            self.scr.refresh()
+            time.sleep(3)
         _log_print("# Exit GUI-mode gracefully")
         curses.endwin()
 
@@ -122,7 +131,7 @@ class Game:
         return b
 
     def destroy_box(self, b):
-        self.boxes.remove(b)
+        self._boxes.remove(b)
 
 
 class _Box:
@@ -162,6 +171,10 @@ class _Box:
 
     def collision(self, b):
         _log_print("# Checking for collision between self and other box")
-
+        if b.x < self.x < b.x+b.width            \
+        or b.y < self.y < b.x+b.height           \
+        or self.x < b.x < self.x+self.width       \
+        or self.y < b.y < self.y+self.height:
+            return True
         return False
 
