@@ -54,10 +54,28 @@ class Game:
         # clear screen
         self.scr.clear()
 
+        ## draw boxes
+        #for b in self._boxes:
+
+        #    # check if the box is outside the frame and compensate
+        #    draw_w = b.width
+        #    if b.x + b.width > self.width:
+        #        draw_w = b.x + b.width - self.width
+
+        #    draw_h = b.height
+        #    if b.x + b.height > self.height:
+        #        draw_w = b.height - self.height
+
+        #    _log_print("# drawing width:", draw_w)
+        #    _log_print("# drawing height:", draw_h)
+
+        #    for i in range(draw_h):
+        #        self.scr.addstr(b.y+i, b.x, _BLOCK*draw_w)
+
         # draw boxes
         for b in self._boxes:
             for i in range(b.height):
-                self.scr.addstr(b.y+i, b.x, _BLOCK*b.width)
+                self.scr.addstr(b.y+i, b.x*2, _BLOCK*(b.width*2))
 
         # show changes
         self.scr.refresh()
@@ -69,7 +87,7 @@ class Game:
         curses.endwin()
 
     def create_box(self, width, height, x=0, y=0):
-        b = _Box(width*2, height, x, y)
+        b = _Box(width, height, x, y)
         self._boxes.append(b)
         return b
 
@@ -86,30 +104,28 @@ class _Box:
 
         self.width = width
         self.height = height
-        self.x = 0
-        self.y = 0
-        self.set_x(x)
-        self.set_y(y)
+        self.x = x
+        self.y = y
 
     def set_x(self, x):
         _log_print("# Set box variable:")
         _log_print("#  - x =", x)
-        self.x = x*2
+        self.x = int(x)
 
     def set_y(self, y):
         _log_print("# Set box variable:")
         _log_print("#  - y =", y)
-        self.y = y
+        self.y = int(y)
 
     def set_height(self, height):
         _log_print("# Set box variable:")
         _log_print("#  - height =", height)
-        self.height = height
+        self.height = int(height)
 
     def set_width(self, width):
         _log_print("# Set box variable:")
         _log_print("#  - width =", width)
-        self.width = width
+        self.width = int(width)
 
     def destroy(self):
         _log_print("# Destroyed box")

@@ -3,25 +3,849 @@
 #  - width: 75 
 #  - height: 38 
 # Created box: 
-#  - width = 10 
-#  - height = 5 
-#  - x = 0 
-#  - y = 20 
-# Set box variable: 
-#  - x = 0 
-# Set box variable: 
+#  - width = 2 
+#  - height = 3 
+#  - x = 5 
 #  - y = 20 
 # Created box: 
-#  - width = 10 
-#  - height = 5 
+#  - width = 2 
+#  - height = 2 
 #  - x = 70 
-#  - y = 20 
-# Set box variable: 
-#  - x = 70 
-# Set box variable: 
-#  - y = 20 
+#  - y = 21 
 # Rendered the next frame 
-# Exit GUI-mode gracefully 
 # Set box variable: 
-#  - x = 135 
+#  - x = 69 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 68 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 67 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 66 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 65 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 64 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 63 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 62 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 61 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 60 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 59 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 58 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 57 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 56 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 55 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 54 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 53 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 52 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 51 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 50 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 49 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 48 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 47 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 46 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 45 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 44 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 43 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 42 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 41 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 40 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 39 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 38 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 37 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 36 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 35 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 34 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 33 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 32 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 31 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 30 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 29 
+# Created box: 
+#  - width = 2 
+#  - height = 2 
+#  - x = 70 
+#  - y = 19 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 28 
+# Set box variable: 
+#  - x = 69 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 27 
+# Set box variable: 
+#  - x = 68 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 26 
+# Set box variable: 
+#  - x = 67 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 25 
+# Set box variable: 
+#  - x = 66 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 24 
+# Set box variable: 
+#  - x = 65 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 23 
+# Set box variable: 
+#  - x = 64 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 22 
+# Set box variable: 
+#  - x = 63 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 21 
+# Set box variable: 
+#  - x = 62 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 20 
+# Set box variable: 
+#  - x = 61 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 19 
+# Set box variable: 
+#  - x = 60 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 18 
+# Set box variable: 
+#  - x = 59 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 17 
+# Set box variable: 
+#  - x = 58 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 16 
+# Set box variable: 
+#  - x = 57 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 15 
+# Set box variable: 
+#  - x = 56 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 14 
+# Set box variable: 
+#  - x = 55 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 13 
+# Set box variable: 
+#  - x = 54 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 12 
+# Set box variable: 
+#  - x = 53 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 11 
+# Set box variable: 
+#  - x = 52 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 10 
+# Set box variable: 
+#  - x = 51 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 9 
+# Set box variable: 
+#  - x = 50 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 8 
+# Set box variable: 
+#  - x = 49 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 7 
+# Set box variable: 
+#  - x = 48 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 6 
+# Set box variable: 
+#  - x = 47 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 5 
+# Set box variable: 
+#  - x = 46 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 4 
+# Set box variable: 
+#  - x = 45 
+# Set box variable: 
+#  - x = 0 
+# Set box variable: 
+#  - y = 30 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 44 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 43 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 42 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 41 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 40 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 39 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 38 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 37 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 36 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 35 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 34 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 33 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 32 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 31 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 30 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 29 
+# Created box: 
+#  - width = 2 
+#  - height = 2 
+#  - x = 70 
+#  - y = 19 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 28 
+# Set box variable: 
+#  - x = 69 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 27 
+# Set box variable: 
+#  - x = 68 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 26 
+# Set box variable: 
+#  - x = 67 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 25 
+# Set box variable: 
+#  - x = 66 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 24 
+# Set box variable: 
+#  - x = 65 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 23 
+# Set box variable: 
+#  - x = 64 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 22 
+# Set box variable: 
+#  - x = 63 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 21 
+# Set box variable: 
+#  - x = 62 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 20 
+# Set box variable: 
+#  - x = 61 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 19 
+# Set box variable: 
+#  - x = 60 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 18 
+# Set box variable: 
+#  - x = 59 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 17 
+# Set box variable: 
+#  - x = 58 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 16 
+# Set box variable: 
+#  - x = 57 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 15 
+# Set box variable: 
+#  - x = 56 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 14 
+# Set box variable: 
+#  - x = 55 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 13 
+# Set box variable: 
+#  - x = 54 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 12 
+# Set box variable: 
+#  - x = 53 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 11 
+# Set box variable: 
+#  - x = 52 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 10 
+# Set box variable: 
+#  - x = 51 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 9 
+# Set box variable: 
+#  - x = 50 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 8 
+# Set box variable: 
+#  - x = 49 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 7 
+# Set box variable: 
+#  - x = 48 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 6 
+# Set box variable: 
+#  - x = 47 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 5 
+# Set box variable: 
+#  - x = 46 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 4 
+# Set box variable: 
+#  - x = 45 
+# Set box variable: 
+#  - x = 0 
+# Set box variable: 
+#  - y = 30 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 44 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 43 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 42 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 41 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 40 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 39 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 38 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 37 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 36 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 35 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 34 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 33 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 32 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 31 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 30 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 29 
+# Created box: 
+#  - width = 2 
+#  - height = 2 
+#  - x = 70 
+#  - y = 19 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 28 
+# Set box variable: 
+#  - x = 69 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 27 
+# Set box variable: 
+#  - x = 68 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 26 
+# Set box variable: 
+#  - x = 67 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 25 
+# Set box variable: 
+#  - x = 66 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 24 
+# Set box variable: 
+#  - x = 65 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 23 
+# Set box variable: 
+#  - x = 64 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 22 
+# Set box variable: 
+#  - x = 63 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 21 
+# Set box variable: 
+#  - x = 62 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 20 
+# Set box variable: 
+#  - x = 61 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 19 
+# Set box variable: 
+#  - x = 60 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 18 
+# Set box variable: 
+#  - x = 59 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 17 
+# Set box variable: 
+#  - x = 58 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 16 
+# Set box variable: 
+#  - x = 57 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 15 
+# Set box variable: 
+#  - x = 56 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 14 
+# Set box variable: 
+#  - x = 55 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 13 
+# Set box variable: 
+#  - x = 54 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 12 
+# Set box variable: 
+#  - x = 53 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 11 
+# Set box variable: 
+#  - x = 52 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 10 
+# Set box variable: 
+#  - x = 51 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 9 
+# Set box variable: 
+#  - x = 50 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 8 
+# Set box variable: 
+#  - x = 49 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 7 
+# Set box variable: 
+#  - x = 48 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 6 
+# Set box variable: 
+#  - x = 47 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 5 
+# Set box variable: 
+#  - x = 46 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 4 
+# Set box variable: 
+#  - x = 45 
+# Set box variable: 
+#  - x = 0 
+# Set box variable: 
+#  - y = 30 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 44 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 43 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 42 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 41 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 40 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 39 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 38 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 37 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 36 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 35 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 34 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 33 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 32 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 31 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 30 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 29 
+# Created box: 
+#  - width = 2 
+#  - height = 2 
+#  - x = 70 
+#  - y = 19 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 28 
+# Set box variable: 
+#  - x = 69 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 27 
+# Set box variable: 
+#  - x = 68 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 26 
+# Set box variable: 
+#  - x = 67 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 25 
+# Set box variable: 
+#  - x = 66 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 24 
+# Set box variable: 
+#  - x = 65 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 23 
+# Set box variable: 
+#  - x = 64 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 22 
+# Set box variable: 
+#  - x = 63 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 21 
+# Set box variable: 
+#  - x = 62 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 20 
+# Set box variable: 
+#  - x = 61 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 19 
+# Set box variable: 
+#  - x = 60 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 18 
+# Set box variable: 
+#  - x = 59 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 17 
+# Set box variable: 
+#  - x = 58 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 16 
+# Set box variable: 
+#  - x = 57 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 15 
+# Set box variable: 
+#  - x = 56 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 14 
+# Set box variable: 
+#  - x = 55 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 13 
+# Set box variable: 
+#  - x = 54 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 12 
+# Set box variable: 
+#  - x = 53 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 11 
+# Set box variable: 
+#  - x = 52 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 10 
+# Set box variable: 
+#  - x = 51 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 9 
+# Set box variable: 
+#  - x = 50 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 8 
+# Set box variable: 
+#  - x = 49 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 7 
+# Set box variable: 
+#  - x = 48 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 6 
+# Set box variable: 
+#  - x = 47 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 5 
+# Set box variable: 
+#  - x = 46 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 4 
+# Set box variable: 
+#  - x = 45 
+# Set box variable: 
+#  - x = 0 
+# Set box variable: 
+#  - y = 30 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 44 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 43 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 42 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 41 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 40 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 39 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 38 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 37 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 36 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 35 
+# Rendered the next frame 
+# Set box variable: 
+#  - x = 34 
 # Exit GUI-mode gracefully 
