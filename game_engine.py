@@ -2,6 +2,7 @@
 # Email:    foratseif@gmail.com
 # Desc:     GameEngine that is the frontend to G-eazy's DinoTerminal Game.
 
+import time
 import curses
 
 _BLOCK = "█"
