@@ -1,0 +1,12 @@
+## Started log ##
+# Gone from terminal mode to GUI mode 
+#  - width: 29 
+#  - height: 211 
+# Created box: 
+#  - width = 10 
+#  - height = 5 
+#  - x = 5 
+#  - y = 5 
+# Rendered the next frame 
+#  - number of boxes: 1 
+# Exit GUI-mode gracefully 
