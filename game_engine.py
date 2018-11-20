@@ -4,6 +4,7 @@
 
 import curses
 
+_BLOCK = "█"
 _logFile = None
 def _log_start():
     global _logFile
@@ -31,6 +32,7 @@ class Game:
         self.scr = curses.initscr()
         curses.noecho()
         curses.cbreak()
+        curser.curs_set(0)
 
         # get dimensions
         w, h = self.scr.getmaxyx()
@@ -55,7 +57,7 @@ class Game:
         _log_print("#  - number of boxes:", len(self.boxes))
         for b in self.boxes:
             for i in range(b.height):
-                self.scr.addstr(b.y+i, b.x, "X"*b.width)
+                self.scr.addstr(b.y+i, b.x, _BLOCK*b.width)
 
         # show changes
         self.scr.refresh()
