@@ -2,34 +2,84 @@
 # Email:    foratseif@gmail.com
 # Desc:     GameEngine that is the frontend to G-eazy's DinoTerminal Game.
 
+import curses
+
+_logFile = None
+def _log_start():
+    global _logFile
+    _logFile = open("GameEngine.log", "w")
+    _logFile.write("## Started log ##\n")
+
+def _log_print(*kargs):
+    if _logFile is not None:
+        for a in kargs:
+            _logFile.write(str(a)+" ")
+        _logFile.write("\n")
+
+
 class Game:
 
-    def __init__(self):
-        print("# Gone from terminal mode to GUI mode")
-        self.width = 200
-        self.height = 100
+    def __init__(self, log=False):
+
+        # start file log
+        if log: _log_start()
+
+        # print to log
+        _log_print("# Gone from terminal mode to GUI mode")
+
+        # init gui
+        self.scr = curses.initscr()
+        curses.noecho()
+        curses.cbreak()
+
+        # get dimensions
+        w, h = self.scr.getmaxyx()
+        self.width, self.height = w//2, h
+        _log_print("#  - width:", self.width)
+        _log_print("#  - height:", self.height)
+
+        # list to keep track of all boxes
+        self.boxes = []
+
 
     def dimensions(self):
         return self.width, self.height
 
     def next_frame(self):
-        print("# Rendered the next frame")
+        _log_print("# Rendered the next frame")
+
+        # clear screen
+        self.scr.clear()
+
+        # draw boxes
+        _log_print("#  - number of boxes:", len(self.boxes))
+        for b in self.boxes:
+            for i in range(b.height):
+                self.scr.addstr(b.y+i, b.x, "X"*b.width)
+
+        # show changes
+        self.scr.refresh()
+
 
     def quit(self):
-        print("# Exit GUI-mode gracefully")
+        _log_print("# Exit GUI-mode gracefully")
+        curses.endwin()
 
     def create_box(self, width, height, x=0, y=0):
-        return _Box(width, height, x=0, y=0)
+        b = _Box(width*2, height, x, y)
+        self.boxes.append(b)
+        return b
 
 
 class _Box:
 
     def __init__(self, width, height, x=0, y=0):
-        print("# Created box:")
-        print("#  - width =", width)
-        print("#  - height =", height)
-        print("#  - x =", x)
-        print("#  - y =", y)
+
+        _log_print("# Created box:")
+        _log_print("#  - width =", width)
+        _log_print("#  - height =", height)
+        _log_print("#  - x =", x)
+        _log_print("#  - y =", y)
 
         self.width = width
         self.height = height
@@ -37,29 +87,29 @@ class _Box:
         self.y = y
 
     def set_x(self, x):
-        print("# Set box variable:")
-        print("#  - x =", x)
+        _log_print("# Set box variable:")
+        _log_print("#  - x =", x)
         self.x = x
 
     def set_y(self, y):
-        print("# Set box variable:")
-        print("#  - y =", y)
+        _log_print("# Set box variable:")
+        _log_print("#  - y =", y)
         self.y = y
 
     def set_height(self, height):
-        print("# Set box variable:")
-        print("#  - height =", height)
+        _log_print("# Set box variable:")
+        _log_print("#  - height =", height)
         self.height = height
 
     def set_width(self, width):
-        print("# Set box variable:")
-        print("#  - width =", width)
+        _log_print("# Set box variable:")
+        _log_print("#  - width =", width)
         self.width = width
 
     def destroy(self):
-        print("# Destroyed box")
+        _log_print("# Destroyed box")
 
     def collision(self, b):
-        print("# Checking for collision between self and other box")
+        _log_print("# Checking for collision between self and other box")
         return False
 
