@@ -2,6 +2,7 @@
 # Email:    foratseif@gmail.com
 # Desc:     GameEngine that is the frontend to G-eazy's DinoTerminal Game.
 
+import time
 import curses
 
 _BLOCK = "█"
@@ -61,6 +62,7 @@ class Game:
 
         # show changes
         self.scr.refresh()
+        time.sleep(delay/1000)
 
 
     def quit(self):
@@ -85,13 +87,15 @@ class _Box:
 
         self.width = width
         self.height = height
-        self.x = x
-        self.y = y
+        self.x = 0
+        self.y = 0
+        self.set_x(x)
+        self.set_y(y)
 
     def set_x(self, x):
         _log_print("# Set box variable:")
         _log_print("#  - x =", x)
-        self.x = x
+        self.x = x*2
 
     def set_y(self, y):
         _log_print("# Set box variable:")
