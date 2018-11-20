@@ -8,3 +8,5 @@ dev_*
 # Vim session
 .session*
 
+# Log-files
+*.log
