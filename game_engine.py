@@ -172,7 +172,7 @@ class _Box:
     def collision(self, b):
         _log_print("# Checking for collision between self and other box")
         if b.x < self.x < b.x+b.width            \
-        or b.y < self.y < b.x+b.height           \
+        or b.y < self.y < b.y+b.height           \
         or self.x < b.x < self.x+self.width       \
         or self.y < b.y < self.y+self.height:
             return True
