@@ -61,6 +61,7 @@ class Game:
 
         # show changes
         self.scr.refresh()
+        time.sleep(delay/1000)
 
 
     def quit(self):
