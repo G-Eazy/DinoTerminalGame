@@ -54,28 +54,57 @@ class Game:
         # clear screen
         self.scr.clear()
 
-        ## draw boxes
-        #for b in self._boxes:
+        gw = self.width * 2
+        gh = self.height
+        _log_print("#  - game_width:", gw)
+        _log_print("#  - game_height:", gh)
 
-        #    # check if the box is outside the frame and compensate
-        #    draw_w = b.width
-        #    if b.x + b.width > self.width:
-        #        draw_w = b.x + b.width - self.width
-
-        #    draw_h = b.height
-        #    if b.x + b.height > self.height:
-        #        draw_w = b.height - self.height
-
-        #    _log_print("# drawing width:", draw_w)
-        #    _log_print("# drawing height:", draw_h)
-
-        #    for i in range(draw_h):
-        #        self.scr.addstr(b.y+i, b.x, _BLOCK*draw_w)
 
         # draw boxes
         for b in self._boxes:
-            for i in range(b.height):
-                self.scr.addstr(b.y+i, b.x*2, _BLOCK*(b.width*2))
+            _log_print("#  - Drawing box")
+
+            bw = b.width * 2
+            bh = b.height
+            bx = b.x * 2
+            by = b.y
+
+            _log_print("#    - box width:", bw)
+            _log_print("#    - box height:", bh)
+            _log_print("#    - box x:", bx)
+            _log_print("#    - box y:", by)
+
+            # check if box is is outside the frame
+            if bx+bw < 0 or bx > gw or by+bh < 0 or by > gh:
+                _log_print("#    - SKIPPED")
+                continue
+
+            # check if the box is on edge of frame
+            draw_w = bw
+            if bx+bw > gw:
+                draw_w = bw - (gw-bx)
+
+            draw_h = bh
+            if by+bh > gh:
+                draw_h = bh - (gh-by)
+
+            draw_x = bx
+            if bx < 0:
+                draw_x = 0
+                draw_w = bw+bx
+
+            draw_y = by
+            if by < 0:
+                draw_y = 0
+                draw_h = bh+by
+
+            _log_print("#    - drawing width:", draw_w)
+            _log_print("#    - drawing height:", draw_h)
+            _log_print("#    - drawing x:", draw_x)
+            _log_print("#    - drawing y:", draw_y)
+
+            for i in range(draw_h):
+                self.scr.addstr(draw_y+i, draw_x, _BLOCK*draw_w)
 
         # show changes
         self.scr.refresh()
