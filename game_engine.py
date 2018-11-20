@@ -6,6 +6,7 @@ import time
 import curses
 
 _BLOCK = "█"
+
 _logFile = None
 def _log_start():
     global _logFile
@@ -120,6 +121,9 @@ class Game:
         self._boxes.append(b)
         return b
 
+    def destroy_box(self, b):
+        self.boxes.remove(b)
+
 
 class _Box:
 
@@ -156,10 +160,8 @@ class _Box:
         _log_print("#  - width =", width)
         self.width = int(width)
 
-    def destroy(self):
-        _log_print("# Destroyed box")
-
     def collision(self, b):
         _log_print("# Checking for collision between self and other box")
+
         return False
 
