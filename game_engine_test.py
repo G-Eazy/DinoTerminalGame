@@ -55,6 +55,7 @@ g.next_frame(250)
 
 if box.collision(box3):
     g.destroy_box(box3)
+g.next_frame(250)
 
 g.next_frame(1000)
 g.quit()

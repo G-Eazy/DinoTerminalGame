@@ -171,10 +171,51 @@ class _Box:
 
     def collision(self, b):
         _log_print("# Checking for collision between self and other box")
-        if b.x < self.x < b.x+b.width            \
-        or b.y < self.y < b.y+b.height           \
-        or self.x < b.x < self.x+self.width       \
-        or self.y < b.y < self.y+self.height:
+
+        _log_print("#  - box.width =", b.width)
+        _log_print("#  - box.height =", b.height)
+        _log_print("#  - box.x =", b.x)
+        _log_print("#  - box.y =", b.y)
+
+        _log_print("#  - self.width =", self.width)
+        _log_print("#  - self.height =", self.height)
+        _log_print("#  - self.x =", self.x)
+        _log_print("#  - self.y =", self.y)
+
+
+        # Check if any of boxes corners is in self
+        if  self.x <= b.x <= self.x+self.width \
+        and self.y <= b.y <= self.y+self.height:
             return True
+
+        if  self.x <= b.x+b.width <= self.x+self.width \
+        and self.y <= b.y         <= self.y+self.height:
+            return True
+
+        if  self.x <= b.x          <= self.x+self.width \
+        and self.y <= b.y+b.height <= self.y+self.height:
+            return True
+
+        if  self.x <= b.x+b.width  <= self.x+self.width \
+        and self.y <= b.y+b.height <= self.y+self.height:
+            return True
+
+        # Check if any of selfs corners is in box
+        if  b.x <= self.x <= b.x+b.width \
+        and b.y <= self.y <= b.y+b.height:
+            return True
+
+        if  b.x <= self.x+self.width <= b.x+b.width \
+        and b.y <= self.y         <= b.y+b.height:
+            return True
+
+        if  b.x <= self.x          <= b.x+b.width \
+        and b.y <= self.y+b.height <= b.y+b.height:
+            return True
+
+        if  b.x <= self.x+self.width  <= b.x+b.width \
+        and b.y <= self.y+self.height <= b.y+b.height:
+            return True
+
         return False
 
