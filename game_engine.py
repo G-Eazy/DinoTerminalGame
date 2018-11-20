@@ -36,13 +36,13 @@ class Game:
         curses.curs_set(0)
 
         # get dimensions
-        w, h = self.scr.getmaxyx()
+        h, w = self.scr.getmaxyx()
         self.width, self.height = w//2, h
         _log_print("#  - width:", self.width)
         _log_print("#  - height:", self.height)
 
         # list to keep track of all boxes
-        self.boxes = []
+        self._boxes = []
 
 
     def dimensions(self):
@@ -55,8 +55,7 @@ class Game:
         self.scr.clear()
 
         # draw boxes
-        _log_print("#  - number of boxes:", len(self.boxes))
-        for b in self.boxes:
+        for b in self._boxes:
             for i in range(b.height):
                 self.scr.addstr(b.y+i, b.x, _BLOCK*b.width)
 
