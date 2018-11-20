@@ -4,7 +4,8 @@ g = Game()
 
 print(g)
 print(g.dimensions())
-print(g.next_frame())
+
+print(g.next_frame()) # remember this function returns the value of the pressed key
 
 b = g.create_box(10, 10)
 
@@ -13,7 +14,6 @@ print(b.set_y(19))
 print(b.set_height(19))
 print(b.set_width(19))
 print(b.destroy())
-
 
 print(g.quit())
 

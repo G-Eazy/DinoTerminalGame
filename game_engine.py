@@ -25,7 +25,6 @@ class Game:
 class _Box:
 
     def __init__(self, width, height, x=0, y=0):
-
         print("# Created box:")
         print("#  - width =", width)
         print("#  - height =", height)
