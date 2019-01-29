@@ -149,6 +149,9 @@ class _Box:
         self.x = x
         self.y = y
 
+        self.fill = _BLOCK
+        self.repeat_fill = True
+
     def set_x(self, x):
         _log_print("# Set box variable:")
         _log_print("#  - x =", x)
@@ -218,4 +221,3 @@ class _Box:
             return True
 
         return False
-
