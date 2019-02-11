@@ -4,13 +4,14 @@ import random as rd
 g = Game(log=True)
 
 dino = g.create_box(2, 3, 5, 20)
+score_box = g.create_box(1, 10, 1, 1)
 
 score = 0
 boxes = []
 boxes.append(g.create_box(2, 2, 70, 21))
 
 def jump():
-    dino.set_x(x)
+    dino.set_x(x+2)
 
 def new_box():
     num1 = rd.randint(0, 10) 
@@ -38,7 +39,7 @@ def check_collisions():
             collision = _box.collision(dino)
             if collision:
                 #g.destroy_box(_box)
-                #g.quit(score)
+                #g.quit()
                 #exit(0)
                 a=0
 
@@ -49,13 +50,13 @@ def run():
     time_elapsed = 0
     delay = 50
     frequency = 2000
-
+    k = 0
     while True:
 
         # Update stats
         time_elapsed += 50
         score += int(time_elapsed / 1000)
-
+        score_box.set_text(str(score))  
         
         # Update speed 
         if time_elapsed % 10000 == 0 and delay >= 5:
@@ -73,19 +74,19 @@ def run():
             new_box()
 
         #### User Action ###
-        #if k == Game.ESCAPE:
-            #g.
-        #elif k == Game.SPACE or k == Game.ARROW_UP:
-            #print("space key pressed")
-        #    jump()
-        #elif k == Game.ARROW_DOWN:
+        if k == Game.ESCAPE:
+            a = 0 
+        elif k == Game.SPACE or k == Game.ARROW_UP:
+            jump()
+        elif k == Game.ARROW_DOWN:
             #crouch()
+            b=0
 
             
           
 
         # Update movement of boxes
-        k = g.next_frame(delay, score)
+        k = g.next_frame(delay)
         
 
         # Check for end of frames and collisions 
@@ -93,5 +94,5 @@ def run():
     
 try:
     run()
-except:
-    g.quit(score)
+except KeyboardInterrupt:
+    g.quit()
