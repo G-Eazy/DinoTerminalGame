@@ -12,15 +12,12 @@ boxes.append(g.create_box(2, 2, 70, 21))
 time_elapsed = 0
 score = 0
 delay = 50
-speed = 2000
 
 while True:
-    if score > 200:
-        break
-    k = g.next_frame(delay, score) # enter delay in ms
+    #k = g.next_frame(delay, score) # enter delay in ms
 
     # Update stats
-    time_elapsed += delay 
+    time_elapsed += 50
     score += int(time_elapsed / 10000) + 1
     
     # Update boxes
@@ -28,9 +25,9 @@ while True:
         box.set_x(box.x-1)
     
     #if time_elapsed % 10000 == 0:
-        #speed -= 10
-    if time_elapsed % (delay+speed) == 0:
-        if rd.randint(0, 10) > 7:
+        #delay -= 2
+    if time_elapsed % 1000 == 0:
+        if rd.randint(0, 10) < 7:
             boxes.append(g.create_box(2, 2, 70, 21))
         else:
             boxes.append(g.create_box(2, 2, 70, 19))
@@ -43,18 +40,20 @@ while True:
         #print("space key pressed")
     #    g.jump()
       
+    k = g.next_frame(delay, time_elapsed) # enter delay in ms
     # Check for collisions and end of frames
     for _box in boxes:
-        if _box.x < 5:
-            #_box.destroy()
-            _box.set_x(0)
-            _box.set_y(30)
-            del boxes[0] 
-        #if _box.x < 25:
-            #collision = box.check_collision(dino)
-            #if collision:
-                #g.quit(score)
+        if _box.x + _box.width == 0:
+            boxes.remove(_box)
+            g.destroy_box(_box)
+        if _box.x < 15:
+            collision = _box.collision(dino)
+            if collision:
+                g.destroy_box(_box)
+                g.quit(score)
+                exit(0)
 
     # jump
 
-g.quit(score)
+#g.quit(score)
+
