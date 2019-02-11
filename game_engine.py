@@ -7,6 +7,14 @@ import curses
 
 _BLOCK = "█"
 
+ESCAPE = 27
+ENTER = 10
+SPACE = 32
+ARROW_UP = 259
+ARROW_DOWN = 258
+ARROW_LEFT = 260
+ARROW_RIGHT = 261
+
 _logFile = None
 def _log_start():
     global _logFile
@@ -18,7 +26,6 @@ def _log_print(*kargs):
         for a in kargs:
             _logFile.write(str(a)+" ")
         _logFile.write("\n")
-
 
 class Game:
 
@@ -36,6 +43,8 @@ class Game:
         curses.cbreak()
         curses.curs_set(0)
 
+        self.scr.keypad(True)
+
         # get dimensions
         h, w = self.scr.getmaxyx()
         self.width, self.height = w//2, h
@@ -49,7 +58,7 @@ class Game:
     def dimensions(self):
         return self.width, self.height
 
-    def next_frame(self, delay, score=None):
+    def next_frame(self, delay):
         _log_print("# Rendered the next frame")
 
         # clear screen
@@ -69,6 +78,9 @@ class Game:
             bh = b.height
             bx = b.x * 2
             by = b.y
+
+            w_offset = 0
+            h_offset = 0
 
             _log_print("#    - box width:", bw)
             _log_print("#    - box height:", bh)
@@ -93,35 +105,33 @@ class Game:
             if bx < 0:
                 draw_x = 0
                 draw_w = bw+bx
+                w_offset = abs(bx)
 
             draw_y = by
             if by < 0:
                 draw_y = 0
                 draw_h = bh+by
+                h_offset = abs(by)
 
             _log_print("#    - drawing width:", draw_w)
             _log_print("#    - drawing height:", draw_h)
             _log_print("#    - drawing x:", draw_x)
             _log_print("#    - drawing y:", draw_y)
 
-            for i in range(draw_h):
-                self.scr.addstr(draw_y+i, draw_x, _BLOCK*draw_w)
-
-        # show score
-        if score is not None:
-            self.scr.addstr(10, 10, "Score: {}".format(score))
+            #for i in range(draw_h):
+            for str, i in b.draw(draw_h, draw_w, h_offset, w_offset):
+                self.scr.addstr(draw_y+i, draw_x, str)
 
         # show changes
         self.scr.refresh()
-        time.sleep(delay/1000)
+        #time.sleep(delay/1000)
+        self.scr.timeout(delay)
+        x = self.scr.getch()
+        _log_print("# GET CHAR:", x)
+        return x
 
 
-    def quit(self, score=None):
-        if score is not None:
-            self.scr.clear()
-            self.scr.addstr(10, 10, "Score: {}".format(score))
-            self.scr.refresh()
-            time.sleep(3)
+    def quit(self):
         _log_print("# Exit GUI-mode gracefully")
         curses.endwin()
 
@@ -151,6 +161,32 @@ class _Box:
 
         self.fill = _BLOCK
         self.repeat_fill = True
+
+        self.text = None
+
+    def draw(self, h, w, offset_h, offset_w):
+        _log_print("# Print box:")
+
+        # check if there is no text
+        if self.text is None:
+
+            _log_print("#  - print regular blocks")
+            for i in range(h): yield _BLOCK*w, i
+
+        # check if text is defined
+        else:
+            _log_print("#  - print text:", self.text, (h, w, offset_h, offset_w))
+            #for i in range(offset_h, h):
+            i = 0
+            for str in self.text[offset_h: h]:
+                _log_print("#  - yielding:", str[offset_w:w], i)
+                yield str[offset_w:w], i
+                i=i+1
+
+
+    def set_text(self, str, break_text=False):
+        _log_print("# Set box text to:", str)
+        self.text = str.splitlines()
 
     def set_x(self, x):
         _log_print("# Set box variable:")
