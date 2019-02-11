@@ -88,7 +88,7 @@ class Game:
             _log_print("#    - box y:", by)
 
             # check if box is is outside the frame
-            if bx+bw < 0 or bx > gw or by+bh < 0 or by > gh:
+            if bx+bw < 0 or bx >= gw or by+bh < 0 or by >= gh:
                 _log_print("#    - SKIPPED")
                 continue
 
@@ -184,7 +184,7 @@ class _Box:
                 i=i+1
 
 
-    def set_text(self, str, break_text=False):
+    def set_text(self, str, repeatable=False, breakable=False):
         _log_print("# Set box text to:", str)
         self.text = str.splitlines()
 
