@@ -7,13 +7,6 @@ import curses
 
 _BLOCK = "█"
 
-ESCAPE = 27
-ENTER = 10
-SPACE = 32
-ARROW_UP = 259
-ARROW_DOWN = 258
-ARROW_LEFT = 260
-ARROW_RIGHT = 261
 
 _logFile = None
 def _log_start():
@@ -28,6 +21,13 @@ def _log_print(*kargs):
         _logFile.write("\n")
 
 class Game:
+    ESCAPE = 27
+    ENTER = 10
+    SPACE = 32
+    ARROW_UP = 259
+    ARROW_DOWN = 258
+    ARROW_LEFT = 260
+    ARROW_RIGHT = 261
 
     def __init__(self, log=False):
 
