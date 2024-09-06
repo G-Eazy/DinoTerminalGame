@@ -7,12 +7,13 @@ class App:
 
         global player
         player = Player(0, 0)
-
+        
         pyxel.run(self.update, self.draw)
 
     def update(self):
         if pyxel.btnp(pyxel.KEY_Q):
             pyxel.quit()
+        #player.update()
 
             
 
@@ -20,10 +21,6 @@ class App:
         pyxel.cls(0)
         pyxel.text(40, 41, "Fighters get ready!", pyxel.frame_count % 16)
         pyxel.blt(61, 66, 0, 0, 0, 38, 16)
-
-
-    def startup(self):
-        pyxel.text(55, 41, "Fighters get ready!", pyxel.frame_count % 16)
 
 
 
